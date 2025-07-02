@@ -1,11 +1,11 @@
 
 const About = () => {
   return (
-    <section className="py-20 bg-white" id="about">
+    <section className="py-20 bg-gradient-to-r from-white to-purple-50" id="about">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">About Me</h2>
-          <div className="w-20 h-1 bg-blue-600 mx-auto mb-8"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-purple-600 to-pink-600 mx-auto mb-8"></div>
         </div>
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -33,12 +33,12 @@ const About = () => {
             </p>
             
             <div className="grid grid-cols-2 gap-4">
-              <div className="text-center p-4 bg-blue-50 rounded-lg">
-                <div className="text-2xl font-bold text-blue-600">50+</div>
+              <div className="text-center p-4 bg-gradient-to-br from-purple-50 to-pink-50 rounded-lg border border-purple-100">
+                <div className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">50+</div>
                 <div className="text-sm text-gray-600">Projects Completed</div>
               </div>
-              <div className="text-center p-4 bg-blue-50 rounded-lg">
-                <div className="text-2xl font-bold text-blue-600">5+</div>
+              <div className="text-center p-4 bg-gradient-to-br from-purple-50 to-pink-50 rounded-lg border border-purple-100">
+                <div className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">5+</div>
                 <div className="text-sm text-gray-600">Years Experience</div>
               </div>
             </div>
