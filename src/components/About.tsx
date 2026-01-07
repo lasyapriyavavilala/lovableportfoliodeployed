@@ -1,3 +1,4 @@
+import profilePhoto from "@/assets/profile-photo.jpeg";
 
 const About = () => {
   return (
@@ -11,9 +12,9 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <img
-              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop"
-              alt="About me"
-              className="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+              src={profilePhoto}
+              alt="Jahnavi Lasyapriya Vavilala"
+              className="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 max-h-96 object-cover"
             />
           </div>
           <div>
