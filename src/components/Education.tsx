@@ -8,7 +8,7 @@ const Education = () => {
       school: "Arizona State University",
       year: "2023 - Present",
       description: "Specializing in Machine Learning, Computer Vision, and Optimization. Focus on deep learning research and production ML systems.",
-      gpa: "4.0 GPA",
+      gpa: "3.57 GPA",
       courses: [
         "Deep Learning",
         "Computer Vision",
