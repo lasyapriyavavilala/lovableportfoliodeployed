@@ -43,8 +43,8 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-6xl mx-auto px-4 flex items-center justify-between">
-        <a href="#" className="text-xl font-bold gradient-text">
-          Lasya Priya
+        <a href="#" className="text-xl font-bold text-foreground">
+          Jahnavi Lasyapriya
         </a>
 
         {/* Desktop Nav */}

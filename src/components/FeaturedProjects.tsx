@@ -70,8 +70,8 @@ const FeaturedProjects = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Featured <span className="gradient-text">Projects</span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+            Featured Projects
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-pastel-blue via-pastel-lavender to-pastel-pink mx-auto rounded-full mb-6" />
           <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -108,7 +108,7 @@ const FeaturedProjects = () => {
                     </div>
                   </div>
 
-                  <h3 className="text-lg font-semibold text-foreground mb-3 group-hover:gradient-text transition-all">
+                  <h3 className="text-lg font-semibold text-foreground mb-3 transition-all">
                     {project.title}
                   </h3>
 

@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="text-xl font-bold gradient-text mb-4">Lasya Priya Vavilala</h3>
+            <h3 className="text-xl font-bold text-foreground mb-4">Jahnavi Lasyapriya Vavilala</h3>
             <p className="text-muted-foreground leading-relaxed text-sm">
               AI/ML Engineer passionate about building intelligent systems 
               across computer vision, optimization, and agentic AI.
