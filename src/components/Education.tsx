@@ -51,8 +51,8 @@ const Education = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="gradient-text">Education</span> & Certifications
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+            Education & Certifications
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-pastel-blue via-pastel-lavender to-pastel-pink mx-auto rounded-full mb-6" />
           <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -117,8 +117,8 @@ const Education = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h3 className="text-2xl font-bold text-center mb-8">
-            Professional <span className="gradient-text">Certifications</span>
+          <h3 className="text-2xl font-bold text-center mb-8 text-foreground">
+            Professional Certifications
           </h3>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {certifications.map((cert, index) => (

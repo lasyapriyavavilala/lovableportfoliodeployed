@@ -54,8 +54,8 @@ const Experience = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Work <span className="gradient-text">Experience</span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+            Work Experience
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-pastel-blue via-pastel-lavender to-pastel-pink mx-auto rounded-full mb-6" />
           <p className="text-muted-foreground max-w-2xl mx-auto">

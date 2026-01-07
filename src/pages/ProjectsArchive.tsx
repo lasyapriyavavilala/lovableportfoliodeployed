@@ -84,8 +84,8 @@ const ProjectsArchive = () => {
               </Button>
             </Link>
 
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              All <span className="gradient-text">Projects</span>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+              All Projects
             </h1>
             <p className="text-muted-foreground max-w-2xl">
               A comprehensive archive of my work across AI, machine learning, cloud engineering, and more.
