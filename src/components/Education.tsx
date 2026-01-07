@@ -8,7 +8,7 @@ const Education = () => {
       school: "Arizona State University",
       year: "2023 - Present",
       description: "Specializing in Machine Learning, Computer Vision, and Optimization. Focus on deep learning research and production ML systems.",
-      gpa: "3.57 GPA",
+      gpa: "3.57 GPA (Cum laude)",
       courses: [
         "Deep Learning",
         "Computer Vision",
@@ -23,7 +23,7 @@ const Education = () => {
       school: "University in India",
       year: "2018 - 2022",
       description: "Strong foundation in signal processing, embedded systems, and applied mathematics. Research focus on image processing and computer vision.",
-      gpa: "Distinction",
+      gpa: "8.74 (Magna cum laude)",
       courses: [
         "Digital Signal Processing",
         "Embedded Systems",
