@@ -1,52 +1,123 @@
-
-import { Github, Linkedin, Mail, Download } from "lucide-react";
+import { Github, Linkedin, Mail, Download, ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
+import FloatingParticles from "./FloatingParticles";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-50 via-pink-50 to-orange-50 px-4">
-      <div className="max-w-4xl mx-auto text-center">
-        <div className="mb-8">
-          <img
-            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face"
-            alt="Profile"
-            className="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-white shadow-lg"
-          />
-          <h1 className="text-5xl font-bold text-gray-900 mb-4 animate-fade-in">
-            John Doe
-          </h1>
-          <h2 className="text-2xl text-purple-600 mb-6 font-medium">
-            Full Stack Developer & Designer
-          </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            Passionate about creating innovative solutions and beautiful user experiences. 
-            I specialize in modern web technologies and love turning ideas into reality.
-          </p>
-        </div>
-        
-        <div className="flex flex-wrap justify-center gap-4 mb-8">
-          <Button className="bg-purple-600 hover:bg-purple-700 transition-all duration-300 hover:scale-105">
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden gradient-pastel-soft">
+      <FloatingParticles />
+      
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background/50" />
+      
+      <div className="max-w-4xl mx-auto text-center px-4 relative z-10 pt-20">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="mb-8"
+        >
+          <motion.div
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            transition={{ delay: 0.2, type: "spring", stiffness: 100 }}
+            className="w-36 h-36 mx-auto mb-8 rounded-full gradient-border p-1"
+          >
+            <div className="w-full h-full rounded-full bg-gradient-to-br from-pastel-blue via-pastel-lavender to-pastel-pink flex items-center justify-center">
+              <span className="text-4xl font-bold text-foreground/80">LP</span>
+            </div>
+          </motion.div>
+
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4"
+          >
+            <span className="gradient-text">Lasya Priya</span>
+            <br />
+            <span className="text-foreground">Vavilala</span>
+          </motion.h1>
+
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+            className="text-xl md:text-2xl text-muted-foreground mb-6 font-medium"
+          >
+            AI/ML Engineer | Computer Vision | Optimization | Agentic AI
+          </motion.h2>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5 }}
+            className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-8"
+          >
+            Building intelligent systems across optimization, deep learning, 
+            3D vision, and agentic AI pipelines.
+          </motion.p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6 }}
+          className="flex flex-wrap justify-center gap-4 mb-10"
+        >
+          <Button
+            size="lg"
+            className="bg-gradient-to-r from-pastel-blue via-pastel-lavender to-pastel-cyan text-foreground hover:opacity-90 transition-all duration-300 hover:scale-105 shadow-pastel rounded-full px-8"
+          >
+            <ArrowDown className="w-4 h-4 mr-2" />
+            View Projects
+          </Button>
+          <Button
+            size="lg"
+            variant="outline"
+            className="rounded-full px-8 border-2 hover:bg-pastel-lavender/20 transition-all duration-300 hover:scale-105"
+          >
             <Download className="w-4 h-4 mr-2" />
             Download Resume
           </Button>
-          <Button variant="outline" className="border-purple-600 text-purple-600 hover:bg-purple-50 transition-all duration-300 hover:scale-105">
-            <Mail className="w-4 h-4 mr-2" />
-            Contact Me
-          </Button>
-        </div>
-        
-        <div className="flex justify-center gap-6">
-          <a href="#" className="text-gray-600 hover:text-purple-600 transition-colors duration-300 hover:scale-110 transform">
-            <Github className="w-6 h-6" />
-          </a>
-          <a href="#" className="text-gray-600 hover:text-purple-600 transition-colors duration-300 hover:scale-110 transform">
-            <Linkedin className="w-6 h-6" />
-          </a>
-          <a href="#" className="text-gray-600 hover:text-purple-600 transition-colors duration-300 hover:scale-110 transform">
-            <Mail className="w-6 h-6" />
-          </a>
-        </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.7 }}
+          className="flex justify-center gap-6"
+        >
+          {[
+            { icon: Github, href: "#", label: "GitHub" },
+            { icon: Linkedin, href: "#", label: "LinkedIn" },
+            { icon: Mail, href: "#", label: "Email" },
+          ].map(({ icon: Icon, href, label }) => (
+            <a
+              key={label}
+              href={href}
+              className="p-3 rounded-full glass-card hover:shadow-pastel transition-all duration-300 hover:scale-110 text-muted-foreground hover:text-foreground"
+              aria-label={label}
+            >
+              <Icon className="w-5 h-5" />
+            </a>
+          ))}
+        </motion.div>
       </div>
+
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1 }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+      >
+        <motion.div
+          animate={{ y: [0, 10, 0] }}
+          transition={{ duration: 2, repeat: Infinity }}
+        >
+          <ArrowDown className="w-6 h-6 text-muted-foreground" />
+        </motion.div>
+      </motion.div>
     </section>
   );
 };
