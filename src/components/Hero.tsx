@@ -2,6 +2,7 @@ import { Github, Linkedin, Mail, Download, ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import FloatingParticles from "./FloatingParticles";
+import profilePhoto from "@/assets/profile-photo.jpeg";
 
 const Hero = () => {
   return (
@@ -23,9 +24,11 @@ const Hero = () => {
             transition={{ delay: 0.2, type: "spring", stiffness: 100 }}
             className="w-36 h-36 mx-auto mb-8 rounded-full gradient-border p-1"
           >
-            <div className="w-full h-full rounded-full bg-gradient-to-br from-pastel-blue via-pastel-lavender to-pastel-pink flex items-center justify-center">
-              <span className="text-4xl font-bold text-foreground/80">LP</span>
-            </div>
+            <img
+              src={profilePhoto}
+              alt="Jahnavi Lasyapriya Vavilala"
+              className="w-full h-full rounded-full object-cover"
+            />
           </motion.div>
 
           <motion.h1
