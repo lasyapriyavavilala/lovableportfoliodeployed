@@ -51,8 +51,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-border/50 pt-8 text-center">
-          <p className="text-muted-foreground flex items-center justify-center gap-2 text-sm">Made with 
-by Lasyapriya Vavilala by adapting AI trends!<Heart className="w-4 h-4 text-pastel-pink" /> by Lasya Priya Vavilala
+          <p className="text-muted-foreground flex items-center justify-center gap-2 text-sm">Made with  by Lasyapriya Vavilala by adapting AI trends!<Heart className="w-4 h-4 text-pastel-pink" /> by Lasya Priya Vavilala
           </p>
           <p className="text-muted-foreground/60 text-xs mt-2">
             © {currentYear} All rights reserved.
