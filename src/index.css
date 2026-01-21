@@ -233,6 +233,10 @@
   .chip-databases {
     @apply bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300;
   }
+
+  .chip-time-series {
+    @apply bg-sky-100 text-sky-700 dark:bg-sky-900/30 dark:text-sky-300;
+  }
 }
 
 @layer utilities {

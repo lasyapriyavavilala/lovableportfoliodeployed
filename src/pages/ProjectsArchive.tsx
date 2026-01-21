@@ -13,6 +13,7 @@ const ProjectsArchive = () => {
     "All",
     "Computer Vision",
     "Deep Learning",
+    "Time Series",
     "Optimization",
     "Cloud",
     "Agentic AI",
@@ -29,6 +30,14 @@ const ProjectsArchive = () => {
     { title: "Overparameterization in Deep Learning", category: "Deep Learning", description: "Research on neural network generalization and optimization with overparameterization.", technologies: ["TensorFlow", "NumPy", "JAX", "Matplotlib"] },
     { title: "Multi-Resolution Blending & Image Stitching", category: "Computer Vision", description: "Seamless panorama creation using Laplacian pyramids and advanced blending.", technologies: ["OpenCV", "Python", "NumPy", "SciPy"] },
     { title: "AWS Greengrass Face Detection Pipeline", category: "Cloud", description: "Edge computing solution for face detection deployed on AWS IoT devices.", technologies: ["AWS", "Lambda", "Greengrass", "DeepLens"] },
+    {
+      title: "Household Power Consumption Analysis & Classification",
+      category: "Time Series",
+      description: "Analyzed household power consumption time-series data and built ML classifiers to label energy usage as low/medium/high.",
+      technologies: ["Time Series", "Machine Learning", "Energy Analytics", "Classification"],
+      imageUrl: "/placeholder.svg",
+      githubUrl: "https://github.com/lasyapriyavavilala/Lasyapriya-Portfolio.github.io/tree/main/Household-Power-Consumption-Analysis",
+    },
     
     // Additional Projects
     { title: "Gradient Descent Optimization Variants", category: "Optimization", description: "Implementation and comparison of Adam, RMSprop, AdaGrad, and custom optimizers.", technologies: ["Python", "NumPy", "JAX", "Matplotlib"] },
@@ -54,6 +63,7 @@ const ProjectsArchive = () => {
     const chipClasses: Record<string, string> = {
       "Computer Vision": "chip-computer-vision",
       "Deep Learning": "chip-deep-learning",
+      "Time Series": "chip-time-series",
       "Agentic AI": "chip-agentic-ai",
       "Cloud": "chip-cloud",
       "Optimization": "chip-optimization",
@@ -132,6 +142,20 @@ const ProjectsArchive = () => {
               >
                 <div className="h-full glass-card rounded-2xl overflow-hidden hover-lift shadow-pastel gradient-border">
                   <div className="h-1 bg-gradient-to-r from-pastel-blue via-pastel-lavender to-pastel-pink" />
+
+                  {project.imageUrl && (
+                    <div className="px-6 pt-6">
+                      <div className="relative overflow-hidden rounded-xl border border-border/60 bg-muted/30">
+                        <img
+                          src={project.imageUrl}
+                          alt={`${project.title} time-series chart placeholder`}
+                          loading="lazy"
+                          className="h-32 w-full object-cover opacity-80 transition-opacity duration-300 group-hover:opacity-100"
+                        />
+                        <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-pastel-blue/10 via-pastel-lavender/10 to-pastel-pink/10" />
+                      </div>
+                    </div>
+                  )}
                   
                   <div className="p-6">
                     <div className="flex items-center justify-between mb-4">
@@ -139,9 +163,21 @@ const ProjectsArchive = () => {
                         {project.category}
                       </span>
                       <div className="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                        <button className="p-2 rounded-full hover:bg-pastel-lavender/20 transition-colors">
-                          <Github className="w-4 h-4 text-muted-foreground" />
-                        </button>
+                        {project.githubUrl ? (
+                          <a
+                            href={project.githubUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="p-2 rounded-full hover:bg-pastel-lavender/20 transition-colors"
+                            aria-label={`Open ${project.title} on GitHub`}
+                          >
+                            <Github className="w-4 h-4 text-muted-foreground" />
+                          </a>
+                        ) : (
+                          <button className="p-2 rounded-full hover:bg-pastel-lavender/20 transition-colors">
+                            <Github className="w-4 h-4 text-muted-foreground" />
+                          </button>
+                        )}
                         <button className="p-2 rounded-full hover:bg-pastel-lavender/20 transition-colors">
                           <ExternalLink className="w-4 h-4 text-muted-foreground" />
                         </button>
