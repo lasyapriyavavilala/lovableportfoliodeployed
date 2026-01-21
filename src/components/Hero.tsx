@@ -63,10 +63,7 @@ const Hero = () => {
           y: 0
         }} transition={{
           delay: 0.5
-        }} className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-8">
-            Building intelligent systems across optimization, deep learning, 
-            3D vision, and agentic AI pipelines.
-          </motion.p>
+        }} className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-8">Building intelligent systems across optimization, deep learning, 3D vision, and agentic AI pipelines.</motion.p>
         </motion.div>
 
         <motion.div initial={{
