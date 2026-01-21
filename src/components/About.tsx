@@ -1,8 +1,6 @@
 import profilePhoto from "@/assets/profile-photo-2025-11-07.jpeg";
-
 const About = () => {
-  return (
-    <section className="py-20 bg-gradient-to-r from-white to-purple-50" id="about">
+  return <section className="py-20 bg-gradient-to-r from-white to-purple-50" id="about">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">About Me</h2>
@@ -11,22 +9,13 @@ const About = () => {
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <img
-              src={profilePhoto}
-              alt="Jahnavi Lasyapriya Vavilala"
-              className="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 max-h-96 object-cover"
-            />
+            <img src={profilePhoto} alt="Jahnavi Lasyapriya Vavilala" className="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 max-h-96 object-cover" />
           </div>
           <div>
             <h3 className="text-2xl font-semibold text-gray-900 mb-4">
               Crafting Digital Experiences
             </h3>
-            <p className="text-gray-600 mb-6 leading-relaxed">
-              With over 5 years of experience in web development, I've had the privilege 
-              of working with diverse teams and technologies. My journey began with a 
-              curiosity for how things work on the web, and has evolved into a passion 
-              for creating meaningful digital experiences.
-            </p>
+            <p className="text-gray-600 mb-6 leading-relaxed">With over 2 years of experience, I've had the privilege of working with diverse teams and technologies. My journey began with a curiosity for data, strategies, and the technology that enables insights</p>
             <p className="text-gray-600 mb-6 leading-relaxed">
               I believe in the power of clean code, thoughtful design, and continuous 
               learning. When I'm not coding, you'll find me exploring new technologies, 
@@ -46,8 +35,6 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
