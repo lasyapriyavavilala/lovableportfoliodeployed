@@ -39,9 +39,8 @@ const Hero = () => {
           y: 0
         }} transition={{
           delay: 0.3
-        }} className="text-5xl lg:text-7xl mb-4 md:text-3xl font-mono font-semibold text-red-900">Jahnavi Lasyapriya Vavilala 
-
-˚.🎀༘⋆<br />
+        }} className="text-5xl lg:text-7xl mb-4 md:text-3xl font-mono font-semibold text-red-900">Jahnavi Lasyapriya Vavilala    
+ ≽^•˕• ྀི≼<br />
             Vavilala
           </motion.h1>
 
