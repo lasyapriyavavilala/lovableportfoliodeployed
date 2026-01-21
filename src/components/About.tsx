@@ -16,11 +16,7 @@ const About = () => {
               Crafting Digital Experiences
             </h3>
             <p className="text-gray-600 mb-6 leading-relaxed">With over 2 years of experience, I've had the privilege of working with diverse teams and technologies. My journey began with a curiosity for data, strategies, and the technology that enables insights</p>
-            <p className="text-gray-600 mb-6 leading-relaxed">
-              I believe in the power of clean code, thoughtful design, and continuous 
-              learning. When I'm not coding, you'll find me exploring new technologies, 
-              contributing to open source projects, or sharing knowledge with the community.
-            </p>
+            <p className="text-gray-600 mb-6 leading-relaxed">I believe in the power of clean code, thoughtful design, and continuous learning. When I'm not coding, you'll find me exploring new technologies, contributing to open source projects, or sharing knowledge with the community.</p>
             
             <div className="grid grid-cols-2 gap-4">
               <div className="text-center p-4 bg-gradient-to-br from-purple-50 to-pink-50 rounded-lg border border-purple-100">
