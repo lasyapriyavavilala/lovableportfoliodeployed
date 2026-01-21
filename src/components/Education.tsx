@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
-import { GraduationCap, Award } from "lucide-react";
+import { Award } from "lucide-react";
+
+import asuLogo from "@/assets/asulogo.png";
+import vitLogo from "@/assets/vitlogo.png";
 
 const Education = () => {
   const education = [
@@ -9,6 +12,7 @@ const Education = () => {
       year: "2023 - Present",
       description: "Specializing in Machine Learning, Computer Vision, and Optimization. Focus on deep learning research and production ML systems.",
       gpa: "3.57 GPA (Cum laude)",
+      logo: asuLogo,
       courses: [
         "Deep Learning",
         "Computer Vision",
@@ -20,10 +24,11 @@ const Education = () => {
     },
     {
       degree: "Bachelor of Technology in Electronics & Communication",
-      school: "University in India",
+      school: "Vellore Institute of Technology",
       year: "2018 - 2022",
       description: "Strong foundation in signal processing, embedded systems, and applied mathematics. Research focus on image processing and computer vision.",
       gpa: "8.74 (Magna cum laude)",
+      logo: vitLogo,
       courses: [
         "Digital Signal Processing",
         "Embedded Systems",
@@ -72,7 +77,14 @@ const Education = () => {
               <div className="glass-card rounded-2xl p-8 h-full hover-lift shadow-pastel">
                 <div className="flex items-start gap-4 mb-6">
                   <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-pastel-lavender to-pastel-pink flex items-center justify-center shrink-0">
-                    <GraduationCap className="w-7 h-7 text-foreground/80" />
+                    {edu.logo ? (
+                      <img
+                        src={edu.logo}
+                        alt={`${edu.school} logo`}
+                        className="w-10 h-10 object-contain"
+                        loading="lazy"
+                      />
+                    ) : null}
                   </div>
                   <div className="flex-1">
                     <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
