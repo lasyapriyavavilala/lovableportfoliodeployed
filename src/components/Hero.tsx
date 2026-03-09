@@ -78,10 +78,6 @@ const Hero = () => {
             <ArrowDown className="w-4 h-4 mr-2" />
             View Projects
           </Button>
-          <Button size="lg" variant="outline" className="rounded-full px-8 border-2 hover:bg-pastel-lavender/20 transition-all duration-300 hover:scale-105">
-            <Download className="w-4 h-4 mr-2" />
-            Download Resume
-          </Button>
         </motion.div>
 
         <motion.div initial={{
