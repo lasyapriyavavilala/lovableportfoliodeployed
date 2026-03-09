@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Download, ArrowDown } from "lucide-react";
+import { Github, Linkedin, Mail, ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import FloatingParticles from "./FloatingParticles";
@@ -77,10 +77,6 @@ const Hero = () => {
           <Button size="lg" className="bg-gradient-to-r from-pastel-blue via-pastel-lavender to-pastel-cyan text-foreground hover:opacity-90 transition-all duration-300 hover:scale-105 shadow-pastel rounded-full px-8">
             <ArrowDown className="w-4 h-4 mr-2" />
             View Projects
-          </Button>
-          <Button size="lg" variant="outline" className="rounded-full px-8 border-2 hover:bg-pastel-lavender/20 transition-all duration-300 hover:scale-105">
-            <Download className="w-4 h-4 mr-2" />
-            Download Resume
           </Button>
         </motion.div>
 
