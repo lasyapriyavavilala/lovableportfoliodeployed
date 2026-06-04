@@ -9,7 +9,7 @@ const Education = () => {
     {
       degree: "Master of Science in Data Science, Analytics & Engineering",
       school: "Arizona State University",
-      year: "2023 - Present",
+      year: "Graduated Dec 2025",
       description: "Specializing in Machine Learning, Computer Vision, and Optimization. Focus on deep learning research and production ML systems.",
       gpa: "3.57 GPA (Cum laude)",
       logo: asuLogo,
@@ -25,7 +25,7 @@ const Education = () => {
     {
       degree: "Bachelor of Technology in Electronics & Communication",
       school: "Vellore Institute of Technology",
-      year: "2018 - 2022",
+      year: "Graduated Sep 2022",
       description: "Strong foundation in signal processing, embedded systems, and applied mathematics. Research focus on image processing and computer vision.",
       gpa: "8.74 (Magna cum laude)",
       logo: vitLogo,

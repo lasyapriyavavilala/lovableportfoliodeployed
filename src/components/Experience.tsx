@@ -4,43 +4,56 @@ import { Briefcase } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      title: "AI/ML Engineer",
-      company: "Research Lab / Company",
-      period: "2023 - Present",
-      location: "Arizona, USA",
-      description: "Developing advanced computer vision systems and optimization algorithms for real-world applications.",
+      title: "Data Scientist",
+      company: "Objectways",
+      period: "Apr 2026 – Present",
+      location: "USA",
+      description: "Working on robotics data and vision-language-action (VLA) policy training pipelines.",
       achievements: [
-        "Built real-time pose estimation and threat detection systems",
-        "Implemented 3D reconstruction pipelines using NeRF Studio",
-        "Designed agentic AI systems for healthcare diagnostics"
+        "Collected and annotated 3,000+ teleoperation video demonstrations on bimanual robots",
+        "Performed sensor–video sync validation and outlier detection on motion signals",
+        "Conducted EDA on episode length, task balance, and joint trajectory patterns"
       ],
-      technologies: ["PyTorch", "TensorFlow", "AWS", "OpenCV", "LangChain"]
+      technologies: ["Python", "PyTorch", "Computer Vision", "Robotics", "EDA"]
     },
     {
-      title: "Data Science Intern",
-      company: "Tech Company",
-      period: "2022 - 2023",
-      location: "Remote",
-      description: "Worked on deep learning models and cloud-based ML infrastructure.",
+      title: "Data Scientist",
+      company: "Arizona State University — Fulton Schools of Engineering",
+      period: "Feb 2026 – Present",
+      location: "Tempe, AZ",
+      description: "Building Agentic AI and RAG systems for pharmaceutical research and LLM evaluation.",
       achievements: [
-        "Developed face detection and recognition pipelines on AWS Greengrass",
-        "Optimized deep learning models for edge deployment",
-        "Created data pipelines for large-scale image processing"
+        "Architected 5-agent Agentic AI platform (Claude + CrewAI) processing 200+ research papers",
+        "Built RAG pipeline with FAISS managing 15K+ embeddings; achieved 0.89 precision",
+        "Shipped FastAPI backend with CI/CD on Docker supporting 50+ concurrent agent workflows"
       ],
-      technologies: ["Python", "AWS Lambda", "Docker", "PostgreSQL", "Redis"]
+      technologies: ["Claude API", "CrewAI", "LangChain", "FAISS", "FastAPI", "Docker"]
     },
     {
-      title: "Research Assistant",
-      company: "University Research",
-      period: "2021 - 2022",
+      title: "Data Scientist",
+      company: "PricewaterhouseCoopers Ltd",
+      period: "Jan 2022 – Dec 2023",
       location: "India",
-      description: "Conducted research on overparameterization in deep neural networks and image processing techniques.",
+      description: "Delivered end-to-end ML, GenAI, and analytics solutions across Fortune 500 clients in manufacturing, energy, retail, and financial services.",
       achievements: [
-        "Published research on neural network optimization",
-        "Developed multi-resolution image blending algorithms",
-        "Built simulation models for autonomous systems"
+        "Built churn, anomaly detection, and forecasting models powering 1,000+ production pipelines",
+        "Developed GenAI analytics assistant (Azure OpenAI + LangChain RAG) reducing research time by 70%",
+        "Created SHAP-based explainability and drift detection for executive-facing dashboards"
       ],
-      technologies: ["MATLAB", "Python", "NumPy", "SciPy", "Jupyter"]
+      technologies: ["Python", "PySpark", "XGBoost", "Azure OpenAI", "LangChain", "SHAP", "C3.ai"]
+    },
+    {
+      title: "Analyst",
+      company: "Arizona State University — College of Health Solutions",
+      period: "May 2024 – Dec 2025",
+      location: "Tempe, AZ",
+      description: "Consolidated financial and operational data across grants; delivered analytics and dashboards for finance leadership.",
+      achievements: [
+        "Regression analysis on 3,500+ records flagged 40+ discrepancies, improving audit accuracy by 15%",
+        "Delivered 5 operational dashboards summarizing grant trends and audit findings",
+        "Provided actionable recommendations for compliance and budget planning"
+      ],
+      technologies: ["R", "SQL", "Power BI", "Workday", "Regression"]
     }
   ];
 

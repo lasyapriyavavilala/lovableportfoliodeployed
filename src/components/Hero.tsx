@@ -2,7 +2,8 @@ import { Github, Linkedin, Mail, ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import FloatingParticles from "./FloatingParticles";
-import profilePhoto from "@/assets/profile-photo-2025-11-07.jpeg";
+import profilePhotoAsset from "@/assets/profile-lasya.jpeg.asset.json";
+const profilePhoto = profilePhotoAsset.url;
 const Hero = () => {
   return <section className="min-h-screen flex items-center justify-center relative overflow-hidden gradient-pastel-soft">
       <FloatingParticles />
