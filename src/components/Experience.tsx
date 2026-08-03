@@ -4,7 +4,7 @@ import { Briefcase } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      title: "Data Scientist",
+      title: "Data Scientist/AI-ML Engineer Teleoperations",
       company: "Objectways",
       period: "Apr 2026 – Present",
       location: "USA",
@@ -17,7 +17,7 @@ const Experience = () => {
       technologies: ["Python", "PyTorch", "Computer Vision", "Robotics", "EDA"]
     },
     {
-      title: "Data Scientist",
+      title: "Data Scientist/ AI-ML Engineer",
       company: "Arizona State University — Fulton Schools of Engineering",
       period: "Feb 2026 – Present",
       location: "Tempe, AZ",
@@ -30,7 +30,7 @@ const Experience = () => {
       technologies: ["Claude API", "CrewAI", "LangChain", "FAISS", "FastAPI", "Docker"]
     },
     {
-      title: "Data Scientist",
+      title: "Data Scientist/AI-ML Engineer",
       company: "PricewaterhouseCoopers Ltd",
       period: "Jan 2022 – Dec 2023",
       location: "India",
