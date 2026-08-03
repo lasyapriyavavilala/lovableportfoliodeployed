@@ -4,7 +4,7 @@ import { Briefcase } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      title: "Data Scientist/AI-ML Engineer Teleoperations",
+      title: "Data Scientist/AI-ML Engineer Teleoperations (Internship)",
       company: "Objectways",
       period: "Apr 2026 – Present",
       location: "USA",
@@ -17,7 +17,7 @@ const Experience = () => {
       technologies: ["Python", "PyTorch", "Computer Vision", "Robotics", "EDA"]
     },
     {
-      title: "Data Scientist/ AI-ML Engineer",
+      title: "Data Scientist/ AI-ML Engineer (Unpaid Internship)",
       company: "Arizona State University — Fulton Schools of Engineering",
       period: "Feb 2026 – Present",
       location: "Tempe, AZ",
@@ -30,7 +30,7 @@ const Experience = () => {
       technologies: ["Claude API", "CrewAI", "LangChain", "FAISS", "FastAPI", "Docker"]
     },
     {
-      title: "Data Scientist/AI-ML Engineer",
+      title: "Data Scientist/AI-ML Engineer (Full Time)",
       company: "PricewaterhouseCoopers Ltd",
       period: "Jan 2022 – Dec 2023",
       location: "India",
@@ -43,7 +43,7 @@ const Experience = () => {
       technologies: ["Python", "PySpark", "XGBoost", "Azure OpenAI", "LangChain", "SHAP", "C3.ai"]
     },
     {
-      title: "Analyst",
+      title: "Analyst (On Campus)",
       company: "Arizona State University — College of Health Solutions",
       period: "May 2024 – Dec 2025",
       location: "Tempe, AZ",
